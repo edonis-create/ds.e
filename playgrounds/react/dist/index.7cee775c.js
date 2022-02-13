@@ -23714,10 +23714,10 @@ const Select = ({ options: options1 = [] , label ="Please select an Option" , on
         strokeLinejoin: "round",
         strokeWidth: 2,
         d: "M19 9l-7 7-7-7"
-    }))), isOpen && /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
         role: "menu",
         id: "dse-select-list",
-        className: "dse-select__overlay",
+        className: `dse-select__overlay ${isOpen ? "dse-select__overlay--open" : ""}`,
         style: {
             top: `${overlayTop}px`
         }
