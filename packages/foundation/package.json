@@ -1,6 +1,6 @@
 {
   "name": "@ds.e/foundation",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "yarn build -w",
-    "test":"jest --verbose"
+    "test": "jest --verbose"
   },
   "publishConfig": {
     "access": "public"

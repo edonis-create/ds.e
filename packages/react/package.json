@@ -1,6 +1,6 @@
 {
   "name": "@ds.e/react",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -39,7 +39,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "dependencies": {},
   "publishConfig": {
     "access": "public"
   }
