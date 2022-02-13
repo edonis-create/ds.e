@@ -1,0 +1,127 @@
+/*=============================================
+=            Colors            =
+=============================================*/
+/*----------  Brand colors   ----------*/
+/*----------  Neutral colors  ----------*/
+/*----------  Utility colors  ----------*/
+/*=====  End of Colors  ======*/
+/*=============================================
+=            Typography            =
+=============================================*/
+/**
+ *
+ * 1) The playfair font. We'll use this for headings mostly.
+ *   https://fonts.google.com/specimen/Playfair+Display
+ *  
+ * 2) The raleway font. We'll use this for the body text.
+ * https://fonts.google.com/specimen/Raleway
+ *
+ */
+/*----------  Font Families  ----------*/
+/*1*/
+/*2*/
+/*----------  Font sizes  ----------*/
+/* Heading font sizes */
+/*----------  Font weights  ----------*/
+/*=====  End of Typography  ======*/
+/*=============================================
+=            Breakpoints            =
+=============================================*/
+/*=====  End of Breakpoints  ======*/
+/*=============================================
+=            Spacing            =
+=============================================*/
+/*=====  End of Spacing  ======*/
+/*=============================================
+=            Shadows            =
+=============================================*/
+/*=============================================
+ =            Global text colors            =
+ =============================================*/
+/*=============================================
+=            Buttons            =
+=============================================*/
+/*=============================================
+=            Forms            =
+=============================================*/
+/*=============================================
+=            Body text sizes            =
+=============================================*/
+/*=============================================
+=            Heading Text sizes            =
+=============================================*/
+/*=============================================
+=            Heading font weights           =
+=============================================*/
+/*=============================================
+=            Margins mixins            =
+=============================================*/
+/*=====  End of Margin mixins  ======*/
+/*=============================================
+=            Padding mixins            =
+=============================================*/
+/*=====  End of Padding mixins  ======*/
+.dse-select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dse-select__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border: 1px solid var(--dse-form-border-color, #f1f2f3);
+  background: var(--dse-form-background-color, #fff);
+  font-family: "Raleway", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  cursor: pointer;
+}
+
+.dse-select__overlay {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  border: 1px solid var(--dse-form-border-color, #f1f2f3);
+  background-color: var(--dse-form-background-color, #fff);
+  box-shadow: 0px 4px 11px rgba(157, 157, 157, 0.21);
+  list-style-type: none;
+  z-index: 99;
+  width: 100%;
+  display: none;
+}
+
+.dse-select__overlay--open {
+  display: block;
+}
+
+.dse-select__caret {
+  transition: all 250ms ease;
+}
+
+.dse-select__caret--open {
+  transform: rotate(180deg);
+}
+
+.dse-select__caret--close {
+  transform: rotate(0);
+}
+
+.dse-select__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+.dse-select__option--highlighted {
+  background-color: var(--dse-form-background-color-hover, #f1f2f3);
+}
+
+.dse-select__option--selected {
+  background-color: var(--dse-form-bg-option-selected, #5ece7b);
+  color: var(--dse-form-color-option-selected, #fff);
+}
